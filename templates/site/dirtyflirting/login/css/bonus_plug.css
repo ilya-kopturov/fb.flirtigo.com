@@ -1,0 +1,86 @@
+<style>
+#MC_main {
+	width:770px;
+	background-color:#ffffff	
+}
+
+#MC_main_DVD_area {
+	width:740px;
+	background-color:#ffffff	
+}
+
+#MC_DVD_area {
+	border-width:1px;
+	border-style:solid;
+	border-color:#999999;
+	background-color:#ffffff;
+	width:100%
+}
+
+#MC_niche_area {
+	width:150px;
+}
+
+#MC_type {
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;    
+ background-color: #D7E5F2;    
+ color: #102132;    
+ border: 1px solid #284279;    
+}
+
+#MC_niche {
+	font-size:16px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#000000;
+}	
+#MC_niche_list {
+	font-size:12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#333333;	
+}
+
+
+#MC_DVD_cover {
+    width: 150px;
+    height: 120px;
+		border: 1px outset #2D2C2D	
+}
+
+#MC_thumb {
+    width: 150px;
+    height: 120px;
+		border: 1px outset #2D2C2D	
+}
+
+.MC_thumb {
+    width: 150px;
+    height: 120px;
+		border: 1px outset #2D2C2D	
+}
+
+#MC_detail_header {
+	font-size:12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#000000;
+}
+
+#MC_DVD_title {
+	font-size:11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#333333;
+}
+
+#MC_pagination {
+	font-size:12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:red;
+}	
+
+#pagination {
+	font-size:12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#ff00ff;	
+}
+</style>

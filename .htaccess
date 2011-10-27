@@ -1,0 +1,52 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_USER_AGENT} ..*Safari.*. [OR]
+RewriteCond %{HTTP:Accept-Encoding} !gzip
+RewriteRule (.*)\.jgz$ $1\.js [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^profile/(.+)$ mem_profile.php?id=$1 [L,QSA]
+RewriteRule ^tag/(.+)$ mem_searchresults.php?tag=$1 [L,QSA]
+
+AddType "text/javascript" .jgz
+AddEncoding gzip .jgz
+
+<Files ~ "build-js|transcodecmd.php">
+  Deny from all
+</Files>
+
+
+
+AddType application/x-httpd-php .php
+DirectoryIndex index.php
+
+ErrorDocument 404 /nopage.php
+ErrorDocument 403 /nopage.php
+
+php_value magic_quotes_gpc "0"
+php_value magic_quotes_runtime "0"
+
+php_value display_errors "1"
+php_value log_errors "1"
+php_value error_reporting "E_ALL & E_NOTICE"
+#php_value error_log "/home/httpd/vhosts/flirtigo.com/fb/logs/error_log"
+
+php_value upload_max_filesize "30M"
+php_value post_max_size "30M"
+
+php_value include_path ".:includes:/usr/share/pear:/usr/share/php"
+
+#order deny,allow
+#deny  from all
+#allow from 95.77.202.121 
+# justin  home
+#allow from 78.105.125.58
+#allow from 76.74.237.13
+#allow from 212.183.128.71
+#allow from 212.183.
+#sbs
+allow from 91.189.133.87
+
+# css girl
+#allow from 95.134.174.141

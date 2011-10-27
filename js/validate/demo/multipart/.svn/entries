@@ -1,0 +1,57 @@
+8
+
+dir
+706
+file:///var/lib/svn/dirtyflirting/trunk/js/validate/demo/multipart
+file:///var/lib/svn
+
+
+
+2008-05-17T16:23:58.921226Z
+292
+andi
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b675ce4b-3cfe-4845-af57-b91758d9fcfe
+
+style.css
+file
+
+
+
+
+2008-05-17T16:37:29.000000Z
+636f387edb53370732786a19de781f31
+2008-05-17T16:23:58.921226Z
+292
+andi
+has-props
+
+index.html
+file
+
+
+
+
+2008-05-17T16:37:29.000000Z
+9d5c7581c8216579bddccafcfb8b86a5
+2008-05-17T16:23:58.921226Z
+292
+andi
+has-props
+
+js
+dir
+

@@ -1,0 +1,26 @@
+<?php
+$dbhost = '66.135.63.101';
+$dbusername = 'flirtigo';
+$dbpasswd = 'oUJq5bx9elrt-';
+$database_name ='flirtigo';
+
+
+$connection = mysql_pconnect("$dbhost","$dbusername","$dbpasswd") or die ("Couldn't connect to server.");
+$db = mysql_select_db("$database_name", $connection) or die("Couldn't select database.");
+
+
+                 if(isset($_POST['subscription_id']))
+			    {
+			    $sqlsubid="select * from ccbill_denied where subscription_id='".$_POST['subscription_id']."'";
+				if(mysql_num_rows(mysql_query($sqlsubid))>0)
+			        {
+				// This subid is already inserted in db
+				}
+				else
+				{
+                                $insertPayment = "INSERT INTO ccbill_denied (customer_fname,customer_lname,email,username,password,subscription_id,clientAccnum,clientSubacc,start_date,address1,city,state,zipcode,country,initialPrice,initialPeriod,recurringPrice,recurringPeriod,rebills,ip_address) VALUES('".$_POST['customer_fname']."','".$_POST['customer_lname']."','".$_POST['email']."','".$_POST['username']."','".$_POST['password']."','".$_POST['subscription_id']."','".$_POST['clientAccnum']."','".$_POST['clientSubacc']."',now(),'".$_POST['address1']."','".$_POST['city']."','".$_POST['state']."','".$_POST['zipcode']."','".$_POST['country']."','".$_POST['initialPrice']."','".$_POST['initialPeriod']."','".$_POST['recurringPrice']."','".$_POST['recurringPeriod']."','".$_POST['rebills']."','".$_POST['ip_address']."')";
+				@mysql_query($insertPayment);
+
+				}
+			    }
+?>

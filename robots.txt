@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /privacy.php
+Disallow: /usc18.php
+Disallow: /terms.php
+Disallow: /password.php
