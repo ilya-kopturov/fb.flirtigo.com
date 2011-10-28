@@ -20,11 +20,11 @@ if (!defined('IN_MAINSITE')) die("Critical Error!");
 //ini_set("magic_quotes_gpc", '0');
 
 /*
-echo '<pre>';
-ini_set('display_errors', 1);
+//echo '<pre>';
+//ini_set('display_errors', 1);
 //error_reporting(E_ALL & ~(E_NOTICE|E_DEPRECATED));
-error_reporting(E_ALL & ~(E_DEPRECATED));
-echo '</pre>';
+//error_reporting(E_ALL & ~(E_DEPRECATED));
+//echo '</pre>';
  */
 
 //echo $_SERVER['REQUEST_URI'];

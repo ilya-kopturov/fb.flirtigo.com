@@ -107,5 +107,3 @@ function check_session($db, $check_password, $check_username, $check_access = 0)
         }
     }
 }
-
-?>

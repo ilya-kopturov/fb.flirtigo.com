@@ -21,7 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="/templates/site/dirtyflirting/login/css/member.css">
 
 	<script type="text/javascript" src="{$base_url}templates/site/dirtyflirting/public/js/functions.js"></script>
-    <script type="text/javascript" src="{$cfg.template.url_template}login/js/cufon-yui.js"></script>
+    	<script type="text/javascript" src="{$cfg.template.url_template}login/js/cufon-yui.js"></script>
 	<script type="text/javascript" src="{$cfg.template.url_template}login/js/VenetoHand_400.font.js"></script>
 	<script type="text/javascript" src="{$cfg.template.url_template}public/js/js.js"></script>
     

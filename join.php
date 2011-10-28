@@ -9,7 +9,6 @@ include("captcha"                 . "/" . "rand.php"      );
 /* ... form submit ... */
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if($fb_user_id) {
-//return;
         $fb_data = @$db->query("
             SELECT 
                 user_id
