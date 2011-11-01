@@ -79,7 +79,7 @@ if($userArea['id'] == 1 || $userArea['id'] == 2 || $userArea['id'] == 103 || $us
 /* end footerPic */
 
 /* ... smarty ... */
-$smarty->display( $cfg['template']['dir_template'] . "public/" . "header.tpl" );
+$smarty->display( $cfg['template']['dir_template'] . "public/" . "header_join.tpl" );
 $smarty->display( $cfg['template']['dir_template'] . "public/" . "join.tpl"   );
 $smarty->display( $cfg['template']['dir_template'] . "public/" . "footer.tpl" );
 /*.. end smarty ..*/

@@ -19,6 +19,7 @@ if ($fb_user_id) {
         $fb_me = $facebook->api('/me');
     } catch (Exception $e) {
         //print_r($e);
+	echo "";
         $fb_user_id = null;
     }
 }

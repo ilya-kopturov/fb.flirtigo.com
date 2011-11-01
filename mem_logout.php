@@ -5,8 +5,11 @@ define("IN_MAINSITE", TRUE);
 
 include ("./includes/" . "require" . "/" . "site_head.php");
 
+
+session_unregister("login_type");
 session_unregister("sess_id");
 session_unregister("sess_screenname");
+session_unregister("sess_pass");
 session_unregister("sess_sex");
 session_unregister("sess_looking");
 session_unregister("sess_accesslevel");
